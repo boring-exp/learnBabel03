@@ -1,2 +1,11 @@
 import { a } from './index.mjs'
-console.log(a) // 1
+
+function test() {
+  console.log('hello world')
+}
+
+export {
+  test
+}
+
+export default test

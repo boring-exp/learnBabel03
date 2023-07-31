@@ -1,10 +1,12 @@
 {
-  "name": "learn-babel",
+  "name": "jinweios-learning-babel",
   "version": "1.0.0.alpha.1",
   "description": "learn babel",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo Error: no test specified && exit 1"
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": { 
+    "dev": "echo hello && exit 0",
+    "serve": "http-server src"
   },
   "author": "JinweiOS",
   "license": "MIT",
