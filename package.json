@@ -1,6 +1,6 @@
 {
   "name": "jinweios-learning-babel",
-  "version": "1.0.0.alpha.1",
+  "version": "1.0.0-alpha.1",
   "description": "learn babel",
   "type": "module",
   "main": "index.mjs",
