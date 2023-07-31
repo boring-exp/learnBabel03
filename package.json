@@ -4,18 +4,13 @@
   "description": "learn babel",
   "type": "module",
   "main": "index.mjs",
-  "scripts": { 
-    "dev": "echo hello && exit 0",
-    "serve": "http-server src"
+  "scripts": {
+    "cpl": "babel src --out-dir dist --plugins=@babel/plugin-proposal-function-bind"
   },
   "author": "JinweiOS",
   "license": "MIT",
   "dependencies": {
-    "http-server": "^14.1.1",
-    "vue": "3.3.4"
-  },
-  "devDependencies": {
     "@babel/cli": "^7.22.9",
-    "axios": "^1.4.0"
+    "@babel/plugin-proposal-function-bind": "^7.22.5"
   }
 }
