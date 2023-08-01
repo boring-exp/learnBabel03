@@ -1,3 +1,4 @@
+// import "core-js/es/array";
 const box = {
   weight: 2,
   getWeight() {

@@ -1,19 +1,19 @@
-const box = {
+import _bindInstanceProperty from "@babel/runtime-corejs3/core-js-stable/instance/bind";
+// import "core-js/es/array";
+var box = {
   weight: 2,
-  getWeight() {
+  getWeight: function getWeight() {
     return this.weight;
   }
 };
-const {
-  getWeight
-} = box;
+var getWeight = box.getWeight;
 console.log(box.getWeight()); // prints '2'
 
-const bigBox = {
+var bigBox = {
   weight: 10
 };
 console.log(getWeight.call(bigBox)); // prints '10'
-const newGetWeight = getWeight.bind(bigBox);
+var newGetWeight = _bindInstanceProperty(getWeight).call(getWeight, bigBox);
 console.log(newGetWeight()); // prints '10'
 
 // Can be chained:
