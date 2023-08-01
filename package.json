@@ -5,12 +5,14 @@
   "type": "module",
   "main": "index.mjs",
   "scripts": {
-    "cpl": "babel src --out-dir dist --plugins=@babel/plugin-proposal-function-bind"
+    "cpl": "babel src --out-dir dist"
   },
   "author": "JinweiOS",
   "license": "MIT",
   "dependencies": {
     "@babel/cli": "^7.22.9",
-    "@babel/plugin-proposal-function-bind": "^7.22.5"
+    "@babel/plugin-proposal-function-bind": "^7.22.5",
+    "@babel/plugin-transform-arrow-functions": "^7.22.5",
+    "@babel/preset-env": "^7.22.9"
   }
 }
